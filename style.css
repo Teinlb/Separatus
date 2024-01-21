@@ -1,0 +1,163 @@
+/* Global styling for the body */
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Styling for the line element */
+#line {
+    height: 1vh;
+    margin: 2vh 0;
+
+    /* Styling for the horizontal rule within the line element */
+    hr {
+        opacity: 0.5;
+        width: 96vw;
+        border-color: rgb(255, 255, 255);
+        border-radius: 50%;
+    }
+}
+
+/* Styling for the header */
+header {
+    height: 10vh;
+
+    /* Styling for the logo within the header */
+    #logo {
+        position: absolute;
+        left: 2vw;
+        top: 3vh;
+        font-family: Montserrat, sans-serif;
+        font-size: 3vmax;
+    }
+
+    #logo:hover {
+        cursor: pointer;
+    }
+
+    /* Styling for the slogan within the header */
+    #slogan {
+        position: absolute;
+        right: 2vw;
+        top: 5vh;
+        font-family: Raleway, sans-serif;
+        font-size: 3vh;
+    }
+}
+
+/* Styling for the main content */
+main {
+    display: flex;
+    min-height: 72vh;
+    justify-content: center;
+
+    /* Styling for the container within the main content */
+    .container {
+        flex: 1;
+        margin: 1.5vh 1.5vw;
+        min-height: 69vh;
+        max-width: 40vw;
+        background-color: rgb(24, 24, 24);
+        border-radius: 25px;
+        border-style: ridge;
+        border-width: 1px;
+        border-color: rgb(110, 110, 110);
+    }
+
+    /* Styling for the input field within the container */
+    #inputField {
+        width: 90%;
+        height: 85%;
+        margin-top: 3%;
+        background: rgb(24, 24, 24);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-family: Montserrat;
+        vertical-align: top;
+        padding: 1%;
+        resize: none;
+    }
+
+    /* Styling for buttons within the container */
+    button {
+        background-color: rgba(40, 40, 40);
+        color: white;
+        font-family: "Montserrat";
+        width: 25%;
+        font-weight: 500;
+        font-size: 1em;
+        border: none;
+        border-radius: 15px;
+        padding: 0.2em;
+        margin-top: 2%;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    /* Styling for settings within the container */
+    #separaSettings {
+        width: 90%;
+        margin: 5% auto;
+        margin-top: 20vh;
+        background: rgb(110, 110, 110);
+        border-radius: 25px;
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 600;
+        padding: 1%;
+
+        /* Styling for settings within the settings block */
+        .setting {
+            margin: 1.5vh auto;
+        }
+
+        /* Styling for horizontal rules within the settings block */
+        hr {
+            width: 95%;
+            margin: 4% auto;
+            opacity: 0.5;
+            border-radius: 50%;
+        }
+
+        /* Styling for the sortBy dropdown within the settings block */
+        #sortBy {
+            font-family: "Montserrat";
+            width: 30%;
+            border-radius: 25px;
+            margin-left: 4px;
+        }
+    }
+
+    /* Styling for the separate button within the container */
+    #separaButton {
+        background-color: rgba(40, 40, 40);
+        color: white;
+        font-family: "Montserrat";
+        width: 50%;
+        font-weight: 500;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 25px;
+        padding: 20px;
+    }
+
+    #separaButton:hover {
+        cursor: pointer;
+    }
+}
+
+/* Styling for the footer */
+footer {
+    height: 4vh;
+
+    /* Styling for the paragraph within the footer */
+    p {
+        font-family: Raleway;
+        font-size: 3vh;
+        margin: auto;
+    }
+}

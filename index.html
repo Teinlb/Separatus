@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maak gemakkelijk woordenlijsten van teksten met Separatus.">
+    <meta name="keywords" content="woordenlijst, tekst, leren, Latijn">
+    <meta name="author" content="Tein Lebouille">
+    <title>Separatus.</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@100&family=Raleway:ital,wght@1,100&display=swap">
+
+</head>
+
+<body>
+    <header>
+
+        <div id="logo" onclick="window.open('index.html', '_self');">
+            Separatus.
+        </div>
+        <div id="slogan">Maak gemakkelijk woordenlijsten van teksten.</div>
+
+    </header>
+    <div id="line"><hr></div>
+    <main>
+
+        <div class="container">
+            <textarea id="inputField" spellcheck="false" onclick="textAreaClicked()">Schrijf hier uw tekst</textarea>
+            <button onclick="copyList()">kopie</button>
+            <button onclick="downloadList()">download</button>
+            <button onclick="deleteList()">verwijder</button>
+        </div>
+        <div class="container">
+            <div id="separaSettings">
+                <div class="setting">
+                    <label for="higherCase">Hoofdletters:</label>
+                    <input type="checkbox" id="higherCase">
+                </div>
+                <hr>
+                <div class="setting">
+                    <label for="sortBy">Sorteren op:</label>
+                    <select id="sortBy">
+                        <option>Standaard</option>
+                        <option value="alphabetic">Alfabetisch</option>
+                        <option value="frequency">Frequentie</option>
+                        <option value="length">Lengte</option>
+                    </select>
+                </div>
+            </div>
+            <button id="separaButton" onclick="separa()">Separa!</button>
+        </div>
+
+    </main>
+    <div id="line"><hr></div>
+    <footer>
+
+        <p>2024 | Tein</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
